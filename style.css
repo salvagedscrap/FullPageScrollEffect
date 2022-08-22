@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body{
+    overflow: none;
+    width: 100vw;
+    height: 100vh;
+}
 h2{
     font-size: 3rem;
 }
@@ -16,10 +21,8 @@ section{
     color: #fff;
     scroll-snap-align: start;
     scroll-behavior: smooth;
-  
 }
 .container{
-    
     scroll-snap-type: y mandatory;
     overflow-y: scroll ;
     height: 100vh;
@@ -28,11 +31,38 @@ section{
     background: rgb(36,164,138);
 }
 .two{
-    background: rgb(211,79,79);
+    /* background: rgb(211,79,79); */
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    padding: 4rem;
+
 }
 .three{
     background: rgb(67,91,175);
 }
 .four{
     background: lightsalmon;
+}
+
+.twoOne,
+.twoTwo,
+.twoThree{
+flex: none;
+width: 100vw;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+scroll-snap-align: start;
+}
+.twoOne{
+    background: rebeccapurple;
+    border: red 5px solid;
+}
+.twoTwo{
+    background: rgba(102, 51, 153, 0.747);
+}
+.twoThree{
+    background: rgba(102, 51, 153, 0.288);
 }
