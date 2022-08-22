@@ -73,24 +73,9 @@ section{
 
 
 
-/* .twoOne,
-.twoTwo,
-.twoThree{
-flex: none;
-width: 100vw;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-scroll-snap-align: start;
-}
-.twoOne{
-    background: rebeccapurple;
-    border: red 5px solid;
-}
-.twoTwo{
-    background: rgba(102, 51, 153, 0.747);
-}
-.twoThree{
-    background: rgba(102, 51, 153, 0.288);
-} */
+@media screen and (max-width: 700) {
+    html{
+        font-size: 55%;
+    }
+  }
+  
