@@ -6,33 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full Page Scroll Effect</title>
     <link rel="stylesheet" href="./style.css">
+
 </head>
-<body>
-    <div class="container">
-        <section>
-            <h1 class="">REVEAL ELEMENTS ON SCROLL WITH SCROLL SNAP</h1>
+<body >
+    <div class="container" data-spy="scroll" data-target=".navbar" data-offset="50">
+        <section id="home">
+            <nav >
+                <h2>LOGO</h2>
+                <ul class="navbar navbar-inverse navbar-fixed-top">
+                    <li class=""><a class="a navsubactive" href="#home">Home</a> </li>
+                    <li><a class="a" href="#one">Section One</a> </li>
+                    <li><a class="a" href="#two">Section Two</a> </li>
+                    <li> <a class="a" href="#three">Section Three</a> </li>
+                    <li><a class="a" href="#four">Section Four</a> </li>
+                </ul>
+            </nav>
+            <h1 class="revealheader">REVEAL ELEMENTS ON SCROLL WITH SCROLL SNAP</h1>
         </section>
-    <section class="one">
+    <section class="one" id="one">
         
         <h2 class="reveal">Section One</h2>
         <div class="reveal">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laborum repellat a voluptatem nostrum pariatur iure aliquid, natus esse, quos explicabo, assumenda consequatur suscipit adipisci voluptas saepe rem tenetur magnam modi velit mollitia perspiciatis? Nostrum qui quod, error nobis impedit molestiae, optio ut debitis voluptates excepturi ex voluptas voluptatibus minus.</p>
 </div>
     </section>
-    <section class="two ">
+    <section class="two " id="two">
 
         <h2 class="reveal">Section two</h2>
         <div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laborum repellat a voluptatem nostrum pariatur iure aliquid, natus esse, quos explicabo, assumenda consequatur suscipit adipisci voluptas saepe rem tenetur magnam modi velit mollitia perspiciatis? Nostrum qui quod, error nobis impedit molestiae, optio ut debitis voluptates excepturi ex voluptas voluptatibus minus.</p>
 </div>
     </section>
-    <section class="three">
+    <section class="three" id="three">
         <h2>Section Three</h2>
         <div>
             <p class="reveal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laborum repellat a voluptatem nostrum pariatur iure aliquid, natus esse, quos explicabo, assumenda consequatur suscipit adipisci voluptas saepe rem tenetur magnam modi velit mollitia perspiciatis? Nostrum qui quod, error nobis impedit molestiae, optio ut debitis voluptates excepturi ex voluptas voluptatibus minus.</p>
 </div>
     </section>
-    <section class="four">
+    <section class="four" id="four">
         <h2 class="reveal">Section Four</h2>
         <div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laborum repellat a voluptatem nostrum pariatur iure aliquid, natus esse, quos explicabo, assumenda consequatur suscipit adipisci voluptas saepe rem tenetur magnam modi velit mollitia perspiciatis? Nostrum qui quod, error nobis impedit molestiae, optio ut debitis voluptates excepturi ex voluptas voluptatibus minus.</p>
@@ -40,6 +51,8 @@
     </section>
     
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
